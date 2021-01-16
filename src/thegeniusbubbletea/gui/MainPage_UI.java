@@ -89,12 +89,22 @@ public class MainPage_UI extends javax.swing.JFrame {
         OrderBtn.setForeground(new java.awt.Color(255, 255, 255));
         OrderBtn.setText("Order");
         OrderBtn.setBorder(null);
+        OrderBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OrderBtnMouseClicked(evt);
+            }
+        });
 
         OrderStatusBtn.setBackground(MenuPanel.getBackground());
         OrderStatusBtn.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         OrderStatusBtn.setForeground(new java.awt.Color(255, 255, 255));
         OrderStatusBtn.setText("Order Status");
         OrderStatusBtn.setBorder(null);
+        OrderStatusBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OrderStatusBtnMouseClicked(evt);
+            }
+        });
 
         MemberBtn.setBackground(MenuPanel.getBackground());
         MemberBtn.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
@@ -102,6 +112,11 @@ public class MainPage_UI extends javax.swing.JFrame {
         MemberBtn.setText("The Genuis Member");
         MemberBtn.setActionCommand("The Genius Member");
         MemberBtn.setBorder(null);
+        MemberBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MemberBtnMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
         MenuPanel.setLayout(MenuPanelLayout);
@@ -286,6 +301,27 @@ public class MainPage_UI extends javax.swing.JFrame {
     private void BuyItNowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyItNowBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BuyItNowBtnActionPerformed
+
+    private void OrderStatusBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OrderStatusBtnMouseClicked
+        // TODO add your handling code here:
+        OrderStatusPage_UI order_status = new OrderStatusPage_UI();
+        this.setVisible(false);
+        order_status.setVisible(true);
+    }//GEN-LAST:event_OrderStatusBtnMouseClicked
+
+    private void MemberBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MemberBtnMouseClicked
+        // TODO add your handling code here:
+        MemberPage_UI member_ui = new MemberPage_UI();
+        this.setVisible(false);
+        member_ui.setVisible(true);
+    }//GEN-LAST:event_MemberBtnMouseClicked
+
+    private void OrderBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OrderBtnMouseClicked
+        // TODO add your handling code here:
+        OrderPage_UI order_ui = new OrderPage_UI();
+        this.setVisible(false);
+        order_ui.setVisible(true);
+    }//GEN-LAST:event_OrderBtnMouseClicked
 
     /**
      * @param args the command line arguments

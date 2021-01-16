@@ -217,6 +217,9 @@
                   <Border info="null"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="OrderBtnMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="OrderStatusBtn">
               <Properties>
@@ -234,6 +237,9 @@
                   <Border info="null"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="OrderStatusBtnMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="MemberBtn">
               <Properties>
@@ -252,6 +258,9 @@
                   <Border info="null"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MemberBtnMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
