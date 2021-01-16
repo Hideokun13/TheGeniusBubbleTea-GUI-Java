@@ -49,7 +49,7 @@ public class LoginPage_UI extends javax.swing.JFrame {
         loginBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Login Page");
+        setTitle("Login");
 
         LoginUI.setBackground(new java.awt.Color(255, 255, 255));
         LoginUI.setName("LoginPanel"); // NOI18N
