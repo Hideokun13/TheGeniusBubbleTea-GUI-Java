@@ -15,8 +15,10 @@ public class TheGeniusBubbleTeaGUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        LoginPage_UI login_ui = new LoginPage_UI();
-        login_ui.setVisible(true);
+//        LoginPage_UI login_ui = new LoginPage_UI();
+//        login_ui.setVisible(true);
+        MainPage_UI main_ui = new MainPage_UI();
+        main_ui.setVisible(true);
     }
     
 }
