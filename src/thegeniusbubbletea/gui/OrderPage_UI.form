@@ -300,7 +300,7 @@
             <Component class="javax.swing.JButton" name="TeaMenuSelectorBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image.menuCatagories/teaMenu.jpg"/>
+                  <Image iconType="3" name="/image/menuCatagories/teaMenu.jpg"/>
                 </Property>
               </Properties>
               <Events>
@@ -310,7 +310,7 @@
             <Component class="javax.swing.JButton" name="SodaMenuSelectorBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image.menuCatagories/sodaMenu.jpg"/>
+                  <Image iconType="3" name="/image/menuCatagories/sodaMenu.jpg"/>
                 </Property>
               </Properties>
               <Events>
@@ -320,7 +320,7 @@
             <Component class="javax.swing.JButton" name="MilkTeaMenuSelectorBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image.menuCatagories/milkteaMenu.jpg"/>
+                  <Image iconType="3" name="/image/menuCatagories/milkteaMenu.jpg"/>
                 </Property>
               </Properties>
               <Events>
@@ -330,7 +330,7 @@
             <Component class="javax.swing.JButton" name="OtherMenuSelectorBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/image.menuCatagories/otherMenu.jpg"/>
+                  <Image iconType="3" name="/image/menuCatagories/otherMenu.jpg"/>
                 </Property>
               </Properties>
               <Events>

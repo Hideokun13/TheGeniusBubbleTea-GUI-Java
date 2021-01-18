@@ -25,8 +25,7 @@ public class milkTeaMenu_UI extends javax.swing.JFrame {
         int numofMenu = 11;
         javax.swing.JButton[] btnList = {Menu1Btn,Menu2Btn,Menu3Btn,Menu4Btn,Menu5Btn,Menu6Btn,Menu7Btn,Menu8Btn,Menu9Btn,Menu10Btn,Menu11Btn};
         for(int i = 1; i <= numofMenu; i++){
-            String imgFilename = i + ".jpg";
-            ImageIcon icon = new ImageIcon("C:\\Users\\Asus\\Documents\\NetBeansProjects\\TheGeniusBubbleTea-GUI\\src\\image\\menuCatagories\\milkTeaMenu\\" + imgFilename);
+            ImageIcon icon = new ImageIcon("./src/image/menuCatagories/milkTeaMenu/" + i + ".jpg");
             Image img = icon.getImage();
             Image imgScale = img.getScaledInstance(btnList[i-1].getWidth(), btnList[i-1].getHeight(), Image.SCALE_SMOOTH);
             ImageIcon scaleIcon = new ImageIcon(imgScale);
@@ -353,7 +352,7 @@ public class milkTeaMenu_UI extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

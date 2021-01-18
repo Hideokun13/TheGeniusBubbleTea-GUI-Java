@@ -158,28 +158,28 @@ public class OrderPage_UI extends javax.swing.JFrame {
         HeaderLabel.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         HeaderLabel.setText("Catagories");
 
-        TeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/teaMenu.jpg"))); // NOI18N
+        TeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/menuCatagories/teaMenu.jpg"))); // NOI18N
         TeaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TeaMenuSelectorBtnMouseClicked(evt);
             }
         });
 
-        SodaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/sodaMenu.jpg"))); // NOI18N
+        SodaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/menuCatagories/sodaMenu.jpg"))); // NOI18N
         SodaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SodaMenuSelectorBtnMouseClicked(evt);
             }
         });
 
-        MilkTeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/milkteaMenu.jpg"))); // NOI18N
+        MilkTeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/menuCatagories/milkteaMenu.jpg"))); // NOI18N
         MilkTeaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MilkTeaMenuSelectorBtnMouseClicked(evt);
             }
         });
 
-        OtherMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/otherMenu.jpg"))); // NOI18N
+        OtherMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/menuCatagories/otherMenu.jpg"))); // NOI18N
         OtherMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 OtherMenuSelectorBtnMouseClicked(evt);
