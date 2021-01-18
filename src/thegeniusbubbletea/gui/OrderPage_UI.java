@@ -37,6 +37,10 @@ public class OrderPage_UI extends javax.swing.JFrame {
         MemberBtn = new javax.swing.JButton();
         ContentPage = new javax.swing.JPanel();
         HeaderLabel = new javax.swing.JLabel();
+        TeaMenuSelectorBtn = new javax.swing.JButton();
+        SodaMenuSelectorBtn = new javax.swing.JButton();
+        MilkTeaMenuSelectorBtn = new javax.swing.JButton();
+        OtherMenuSelectorBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Catagories");
@@ -154,20 +158,61 @@ public class OrderPage_UI extends javax.swing.JFrame {
         HeaderLabel.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         HeaderLabel.setText("Catagories");
 
+        TeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/teaMenu.jpg"))); // NOI18N
+        TeaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TeaMenuSelectorBtnMouseClicked(evt);
+            }
+        });
+
+        SodaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/sodaMenu.jpg"))); // NOI18N
+        SodaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SodaMenuSelectorBtnMouseClicked(evt);
+            }
+        });
+
+        MilkTeaMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/milkteaMenu.jpg"))); // NOI18N
+        MilkTeaMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MilkTeaMenuSelectorBtnMouseClicked(evt);
+            }
+        });
+
+        OtherMenuSelectorBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image.menuCatagories/otherMenu.jpg"))); // NOI18N
+        OtherMenuSelectorBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OtherMenuSelectorBtnMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout ContentPageLayout = new javax.swing.GroupLayout(ContentPage);
         ContentPage.setLayout(ContentPageLayout);
         ContentPageLayout.setHorizontalGroup(
             ContentPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ContentPageLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(HeaderLabel)
-                .addContainerGap(571, Short.MAX_VALUE))
+                .addGroup(ContentPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(OtherMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MilkTeaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SodaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TeaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HeaderLabel))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         ContentPageLayout.setVerticalGroup(
             ContentPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ContentPageLayout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addComponent(HeaderLabel)
+                .addGap(61, 61, 61)
+                .addComponent(TeaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(MilkTeaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(SodaMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(OtherMenuSelectorBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -226,6 +271,34 @@ public class OrderPage_UI extends javax.swing.JFrame {
         order_status.setVisible(true);
     }//GEN-LAST:event_OrderStatusBtnMouseClicked
 
+    private void TeaMenuSelectorBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TeaMenuSelectorBtnMouseClicked
+        // TODO add your handling code here:
+        TeaMenu_UI menu = new TeaMenu_UI();
+        this.setVisible(false);
+        menu.setVisible(true);
+    }//GEN-LAST:event_TeaMenuSelectorBtnMouseClicked
+
+    private void MilkTeaMenuSelectorBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MilkTeaMenuSelectorBtnMouseClicked
+        // TODO add your handling code here:
+        milkTeaMenu_UI menu = new milkTeaMenu_UI();
+        this.setVisible(false);
+        menu.setVisible(true);
+    }//GEN-LAST:event_MilkTeaMenuSelectorBtnMouseClicked
+
+    private void OtherMenuSelectorBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OtherMenuSelectorBtnMouseClicked
+        // TODO add your handling code here:
+        OtherMenu_UI menu = new OtherMenu_UI();
+        this.setVisible(false);
+        menu.setVisible(true);
+    }//GEN-LAST:event_OtherMenuSelectorBtnMouseClicked
+
+    private void SodaMenuSelectorBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SodaMenuSelectorBtnMouseClicked
+        // TODO add your handling code here:
+        SodaMenu_UI menu = new SodaMenu_UI();
+        this.setVisible(false);
+        menu.setVisible(true);
+    }//GEN-LAST:event_SodaMenuSelectorBtnMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -269,8 +342,12 @@ public class OrderPage_UI extends javax.swing.JFrame {
     private javax.swing.JPanel MainPanel;
     private javax.swing.JButton MemberBtn;
     private javax.swing.JPanel MenuPanel;
+    private javax.swing.JButton MilkTeaMenuSelectorBtn;
     private javax.swing.JButton OrderBtn;
     private javax.swing.JButton OrderStatusBtn;
+    private javax.swing.JButton OtherMenuSelectorBtn;
+    private javax.swing.JButton SodaMenuSelectorBtn;
+    private javax.swing.JButton TeaMenuSelectorBtn;
     private javax.swing.JLabel logoImage;
     // End of variables declaration//GEN-END:variables
 }
